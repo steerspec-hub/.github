@@ -1,0 +1,10 @@
+# Files that `bd` (beads) generates and rewrites on `bd init` and upgrades. Lint fixes there would
+# be overwritten, so markdownlint skips them; the rules in .markdownlint.yml apply to the rest.
+ignores:
+  - ".beads/**"
+  - ".agents/**"
+  - ".codex/**"
+  - ".cursor/**"
+  - ".claude/**"
+  - "AGENTS.md"
+  - "CLAUDE.md"
