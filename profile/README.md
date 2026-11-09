@@ -19,8 +19,9 @@
 only the clauses its own rules map: a clause nobody mapped is invisible, and a typo in a clause
 number passes.
 
-SteerSpec Hub publishes standards as versioned **Standard Realms**: every clause, with its own number
-and level, as Published rules. SteerSpec itself still holds no clause list. Each realm is published
+SteerSpec Hub publishes standards as versioned **Standard Realms**: rules derived from every clause,
+each tagged with the clause's own number and level. A clause with several sentences becomes several
+rules. SteerSpec itself still holds no clause list. Each realm is published
 under the standard's own licence, with attribution to its authors.
 
 ## How it works
@@ -28,7 +29,7 @@ under the standard's own licence, with attribution to its authors.
 ```mermaid
 flowchart LR
     S["<b>Standard</b><br/>machine-readable release"]
-    R["<b>Standard Realm</b><br/>one rule per clause, tagged release"]
+    R["<b>Standard Realm</b><br/>rules derived from each clause, tagged release"]
     P["<b>Your project</b><br/>rules map clauses"]
     C["<b>Coverage</b><br/>mapped, gaps, typos"]
 

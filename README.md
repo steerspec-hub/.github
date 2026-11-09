@@ -13,8 +13,8 @@
 
 </div>
 
-This repository holds the community health files GitHub applies to every SteerSpec Hub repository
-that doesn't define its own, plus the README rendered on the organization page. For the hub itself,
+This repository holds the community health files GitHub uses as defaults for SteerSpec Hub
+repositories that don't define their own, plus the README rendered on the organization page. For the hub itself,
 visit [steerspec-hub.com](https://steerspec-hub.com); for SteerSpec, [steerspec.dev](https://steerspec.dev).
 
 ## Contents
@@ -30,10 +30,16 @@ visit [steerspec-hub.com](https://steerspec-hub.com); for SteerSpec, [steerspec.
 
 ## How defaults apply
 
-A repository inherits these files unless it ships its own copy. A repo's own file always wins, so
-override per repo whenever the org default doesn't fit.
+GitHub uses only the community health files as org-wide defaults: `CONTRIBUTING.md`,
+`CODE_OF_CONDUCT.md` and `SECURITY.md`. A repository that has none of its own shows these. A repo's
+own file always wins, so override per repo whenever the org default doesn't fit.
+
+`profile/README.md` renders on the organization page. The README, `LICENSE`, the markdownlint
+configuration and the CI workflow apply to this repository only; GitHub copies none of them into
+other repositories.
 
 ## Contributing
 
-Changes here affect every repository in the org, so keep them small and open a pull request. See
+Changes to the community health files and the profile affect every repository in the org, so keep
+them small and open a pull request. See
 [`CONTRIBUTING.md`](CONTRIBUTING.md).
